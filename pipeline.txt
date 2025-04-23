@@ -48,6 +48,7 @@ pipeline {
                 echo "Running new Docker container..."
                 docker run -d -p 8080:8080 --name ${CONTAINER_NAME} ${IMAGE_NAME}
                 EOF
+
                 """
             }
         }
@@ -62,3 +63,4 @@ pipeline {
         }
     }
 }
+print('karthik')
